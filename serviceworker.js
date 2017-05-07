@@ -3,8 +3,8 @@ self.addEventListener('fetch', function(event) {
     fetch(event.request).catch(function() {
       return new Response(
         'Welcome to the our service worker test \n'+        
-'There seems to be a problem with your connection.\n'+        
-'We look forward to telling you about Paddy as soon as you are online'
+          'There seems to be a problem with your connection.\n'+        
+          'We look forward to seeing you as soon as you are online'
       );
     })
   );
