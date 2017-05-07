@@ -35,6 +35,17 @@
                 <div class="icon"><a href="settings.html"><img src="img/settings.png" alt="Settings Icon" width="50%"/></a>Settings</div>
             </nav>
     </footer>
+    
+     <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+          console.log('Service worker registered successfully');
+        }).catch(function(err) {
+          console.log('Service worker registration failed: ', err);
+        });
+      }
+    </script>
+    
     </body>
     
  </html>
