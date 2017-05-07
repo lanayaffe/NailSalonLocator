@@ -1,11 +1,7 @@
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    fetch(event.request).catch(function() {
-      return new Response(
-        'Welcome to the our service worker test \n'+        
-          'There seems to be a problem with your connection.\n'+        
-          'We look forward to seeing you as soon as you are online'
-      );
+self.addEventListener('install', function(event) {
+  event.waitUntil(
+    caches.open('gih-cache').then(function(cache) {
+      return cache.add('offline.html');
     })
   );
 });
