@@ -18,8 +18,8 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "index.html?launcher=true"
-    "background_color": "#e6bad8"
+    "start_url": "index.html?launcher=true",
+    "background_color": "#e6bad8",
     "theme_color": "#e6bad8"
 
 }
