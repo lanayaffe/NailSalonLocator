@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+		<title>Nail Salon Locator</title>
+        <link rel="stylesheet" type ="text/css" href="style.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	</head>
+
+	<body>
+        
+        <header>Nail Salons</header>
+        
+        <div id="main-content">
+            <div class="map" id="map" alt="Map"></div>
+            <div id="location-list"></div>
+        </div>
+        
+        <footer>
+            <nav>
+                <div class="icon"><a href="browse.html"><img src="img/browse.png" alt="Browse Icon" width="45%"/></a>Browse</div>
+                <div class="icon"><a href="favourites.html"><img src="img/favourite.png" alt="Favourites" width="50%"/></a>Favourites</div>
+                <div class="icon"><a href="location.html"><img src="img/location.png" alt="Location Icon" width="35%"/></a>Location</div>
+                <div class="icon"><a href="settings.html"><img src="img/settings.png" alt="Settings Icon" width="50%"/></a>Settings</div>
+            </nav>
+    </footer>
+        
+<!--        <script src="myScript.js"></script>-->
+        <script>
+          function initMap() {
+            var uluru = {lat: 53, lng: -2.1833};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 12,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4zubR7duu-ouc1UnGHTwftteegewPIXk&callback=initMap">
+        </script>
+        
+    </body>
+    
+ </html>
