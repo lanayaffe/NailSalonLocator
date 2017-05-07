@@ -1,16 +1,16 @@
 var CACHE_NAME = 'gih-cache';
 var CACHED_URLS = [
-  'offline.html',
-  'style.css',
-    'mobiletechs.png',
-    'favicon.ico',
-    'nailsalons.png',
-    'acrylics.png',
-    'browse.png',
-    'gels.png',
-    'favourite.png',
-    'location.png',
-    'settings.png'    
+    'offline.html',
+    'style.css',
+    'img/mobiletechs.png',
+    'img/favicon.ico',
+    'img/nailsalons.png',
+    'img/acrylics.png',
+    'img/browse.png',
+    'img/gels.png',
+    'img/favourite.png',
+    'img/location.png',
+    'img/settings.png'    
 ];
 
 self.addEventListener('install', function(event) {
