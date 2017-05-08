@@ -117,3 +117,51 @@ h3 {
     width: 80%;
     margin: 0 auto;
 }
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+      
+      #main-content {
+          text-align: center;
+          width: 100%;
+          margin: 0 auto;
+          height: 600px;
+      }
+      
+      #nav, footer {
+          width: 100%;
+          text-align: center;
+      }
+      
+      img.icon {
+          width: 22%;
+      }
+      
+      .icon {
+          width: 18%;
+      }
+      
+      .browse {
+          width: 85%;
+      }
+        
+      .row {
+          text-align: center;
+          margin: 0 auto;
+          padding: 10px 0;
+      }
+      
+      .second {
+          width: 80%;
+      }
+      
+      .sm {
+          width: 22%;
+      }
+      
+
+}
