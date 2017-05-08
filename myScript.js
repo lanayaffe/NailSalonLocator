@@ -4,15 +4,13 @@ let options = {
   maximumAge: 0
 };
 
-const output = document.getElementById("my-location");
+const output = document.getElementById("map");
 
 function success(pos) {
 	
 	let latitude  = pos.coords.latitude;
                         let longitude = pos.coords.longitude;
 	let accuracy = pos.coords.accuracy;
-
-    output.innerHTML = `Latitude is ${latitude} and Longitude is ${longitude}. More or less ${accuracy} metres.`;
 
     const img = new Image();
     img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
@@ -31,3 +29,4 @@ navigator.geolocation.getCurrentPosition(success, error, options);
     const myLoc = `https://maps.googleapis.com/maps/api/staticmap?center=${latitude},${longitude}&zoom=13&size=300x300&maptype=roadmap&markers=color:blue%7Clabel:A%7C ${latitude},${longitude}`;
 img.src = myLoc;
 
+   

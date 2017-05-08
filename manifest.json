@@ -4,6 +4,7 @@
     "start_url": "/?utm_source=homescreen",
     "short_name": "Salon Locator",
     "name": "Nail Salon Locator",
+    "display": "standalone",
     "icons": [
       {
        "src": "android-icon-36x36.png",
