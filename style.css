@@ -71,3 +71,7 @@ nav {
     font-size: 16px;
     overflow: scroll;
 }
+
+button {
+    font-size: 20px;
+}
