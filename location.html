@@ -16,8 +16,13 @@
         
         <div id="main-content">
             
-            <h3>Set your location here:</h3>
-        
+            <h3>Set your location:</h3>
+            <div class="map" id="map" alt="Map"></div>
+            
+            <div id="btn">
+                <button type="button" class="location">Set Location</button>
+                <button type="button" class="location">Change Location</button>
+            </div>
         </div>
         
         <footer>
@@ -28,6 +33,23 @@
                 <div class="icon"><a href="settings.html"><img src="img/settings.png" alt="Settings Icon" width="50%"/></a>Settings</div>
             </nav>
     </footer>
+    
+    <script>
+          function initMap() {
+            var uluru = {lat: 53, lng: -2.1833};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 12,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4zubR7duu-ouc1UnGHTwftteegewPIXk&callback=initMap">
+        </script>
     </body>
     
  </html>
