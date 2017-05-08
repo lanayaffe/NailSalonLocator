@@ -1,6 +1,4 @@
 {
-    "short_name": "Salon Locator",
-    "name": "Nail Salon Locator",
     "icons": [
       {
        "src": "/android-icon-36x36.png",
@@ -41,6 +39,7 @@
      ]
     "background_color": "#e6bad8",
     "theme_color": "#e6bda8",
-    "start_url": "/?utm_source=homescreen"
-
+    "start_url": "/?utm_source=homescreen",
+    "short_name": "Salon Locator",
+    "name": "Nail Salon Locator",
 }
