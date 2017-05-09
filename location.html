@@ -15,17 +15,17 @@
         <header>My Location</header>
         
         <div id="main-content">
-            
             <h3>Set your location:</h3>
             <div class="map" id="map" alt="Map"></div>
             
             <form id="postcode"><input type="text" value="Enter your postcode" aria-label="Postcode"></form>
             
             <div id="btn">
-                <button type="button" class="location">Set Location</button>
-                <button type="button" class="location">Change Location</button>
+                <button type="button" id="set-location" class="location">Set Location</button>
+                <button type="button" id="get-location" class="location">Change Location</button>
             </div>
         </div>
+		
         
         <footer>
             <nav>
@@ -53,6 +53,36 @@
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4zubR7duu-ouc1UnGHTwftteegewPIXk&callback=initMap">
         </script>
+        <script>
+			// Go lookup the buttons in the HTML
+			var setlocation = document.getElementById('set-location'),
+                getlocation = document.getElementById('get-location');
+
+			// Event Listener for the "Set Name" button
+			setlocation.addEventListener('click', function(e){
+				// Ask the user for their name
+				var newlocation = prompt("Enter your postcode");
+
+				// Save this to localstorage
+				localStorage.setItem("location", newlocation);
+			}, false);
+
+			// Event Listener for the "Get Name" button
+			getlocation.addEventListener('click', function(e){
+				// Get the name back out of localStorage
+				var location = localStorage.getItem("location");
+
+				// Was a name set?
+				if(name !== null){
+					// Yes - output it
+					alert("Postcode is: " + location);
+				}else{
+					// No, not yet - inform the user
+					alert("Location has not been set yet.");
+				}
+
+			}, false);
+		</script>
     </body>
     
  </html>

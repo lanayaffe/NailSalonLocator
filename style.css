@@ -15,7 +15,24 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    animation: fadeIn 1.5s ease;
+    -webkit-animation: fadeIn 1.5s ease;
 }
+
+@keyframes fadeIn {
+  0% {
+    background-color: #632852;
+  }
+  100% {
+    background-color: #e6bad8;
+  }
+}
+/*
+
+header:hover {
+    background: #;
+}
+*/
 
 #main-content {
     height: 100%;
