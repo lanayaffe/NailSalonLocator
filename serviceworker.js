@@ -1,7 +1,16 @@
 var CACHE_NAME = 'gih-cache-v4';
 var CACHED_URLS = [
   'offline.html',
-  'style.css'
+  'style.css',
+    'img/browse.png',
+    'img/favourites.png',
+    'img/settings.png',
+    'img/location.png',
+    'img/nailsalons.png',
+    'img/mobiletechs.png',
+    'img/acrylics.png',
+    'img/gels.png',
+    'favicon.ico'
 ];
 
 

@@ -94,13 +94,21 @@ h3 {
     padding: 15px 5px 0px 20px;
 }
 
-.location {
+.location, .list-btn, .view-browser {
     background-color: #e6bad8;
     font-weight: 400;
     border-radius: 10px;
     border: none;
     padding: 10px 15px;
     text-align: center;
+}
+
+.list-btn {
+    display: inline;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-top: -15px;
+    margin-bottom: 10px;
 }
 
 #btn {
@@ -116,6 +124,28 @@ h3 {
     padding: 10px 15px 15px 15px;
     width: 80%;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.view-browser {
+    width: 50%;
+    font-size: 22px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.view-btn {
+    text-align: center;
+    margin: 30px 20px;
+}
+
+.favourites-list {
+    margin-top: 20px;
 }
 
 /* Landscape */
@@ -162,6 +192,104 @@ h3 {
       .sm {
           width: 22%;
       }
-      
+}
 
+/* ----------- Tablet ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+      header {
+          font-size: 26px;
+      }
+      
+      #main-content {
+          padding: 40px 0;
+          height: 700px;
+      }
+      
+      footer, nav {
+          width: 100%;
+          text-align: center;
+      }
+      
+      img.icon {
+          width: 10%;
+      }
+      
+      .col-6 {
+          width: 40%;
+          padding: 40px 20px;
+          font-size: 22px;
+      }
+      
+      .icon {
+          width: 20%;   
+      }
+      
+      .browse {
+          width: 45%;
+          padding: 10px;
+      }
+        
+      .row {
+          text-align: center;
+          margin: 0 auto;
+          padding: 10px 0;
+          width: 100%;
+      }
+      
+      .second {
+          width: 40%;
+      }
+      
+      .sm {
+          width: 40%;
+      }
+      
+      .map {
+          height: 400px;
+      }
+      
+      .location {
+          padding: 20px 30px;
+          font-size: 26px;
+          font-weight: 600;
+      }
+      
+      h3 {
+          font-size: 25px;
+      }
+      
+      .settings {
+          text-align: left;
+      }
+      
+      .settings-form {
+          float: right;
+          display: inline;
+          margin-right: 100px;
+      }
+      
+      .favourites-list {
+          padding: 10px;
+          font-size: 22px;
+          text-align: left;
+      }
+      
+      ol li {
+          padding: 10px 40px;
+          list-style-type: none;
+          display: inline-block;
+          float: left;
+      }
+      
+      .list-btn {
+          float: left;
+          margin: 0px 10px;
+          font-size: 22px;
+      }
+          
 }
