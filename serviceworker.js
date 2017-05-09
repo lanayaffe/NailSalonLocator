@@ -3,7 +3,7 @@ var CACHED_URLS = [
   'offline.html',
   'style.css',
     'img/browse.png',
-    'img/favourites.png',
+    'img/favourite.png',
     'img/settings.png',
     'img/location.png',
     'img/nailsalons.png',
